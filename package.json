@@ -1,0 +1,16 @@
+{
+  "name": "fh-license",
+  "version": "0.1.0",
+  "description": "",
+  "main": "generate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^0.9.0",
+    "commander": "^2.7.1",
+    "lodash": "^3.6.0"
+  }
+}

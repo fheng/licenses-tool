@@ -28,9 +28,9 @@ It will generate a licenses.txt file in the target dir.
 
 Each license file should use the following format:
 
-line 1: the name of the component
-line 2: The type of the license e.g. MIT, Apache 2.0
-line 3: The link to the license file
+* line 1: the name of the component
+* line 2: The type of the license e.g. MIT, Apache 2.0
+* line 3: The link to the license file
 
 The rest should be the content of the licenses.
 

@@ -1,0 +1,4 @@
+{
+  "name":"fh-js-sdk",
+  "libs":["crypto-js", "lawnchair", "rsa", "json2", "underscore", "process", "loglevel", "type-of", "geodesyconversion"]
+}

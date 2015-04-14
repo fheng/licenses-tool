@@ -5,106 +5,81 @@ var async = require('async');
 var _ = require('lodash');
 var path = require('path');
 var fs = require('fs');
+var parser = require('./lib/parser');
+var generator = require('./lib/generator');
+var writer = require('./lib/writer');
 
-programe.parse(process.argv);
+programe
+  .version('0.0.1')
+  .usage('[options] <target dir to write the license file>')
+  .option('-m, --meta [value]', 'Specify the path to a json file which describes the dependencies for generating the single licenses.txt file')
+  .option('-a, --all [value]', 'Specify the path to a json file contains the paths of an array of meta data files for generating an overarching license file')
+  .parse(process.argv);
 
-var fhmodules = 'fh-';
+if(!programe.args.length){
+  programe.outputHelp();
+  process.exit(1);
+}
+
 var targetModule = programe.args[0];
 
-function getDeps(packagejson){
-  var deps = packagejson.dependencies;
-  return _.filter(_.keys(deps), function(value){
-    if(value.indexOf(fhmodules) === 0){
-      return false;
-    } else {
-      return true;
-    }
-  });
-}
-
-function generateTOC(licenses){
-  var toc = _.map(licenses, function(value, index){
-    return 'Section ' + (++index) + ' : ' + value.name;
-  });
-  return toc;
-}
-
-function writeLicenseFile(target, name, licenses, callback) {
-  var targetFile = path.join(target, 'licenses.txt');
-  if(fs.existsSync(targetFile)){
-    console.log('Find existing licenses.txt file, remove it');
-    fs.unlinkSync(targetFile);
+function generateLicense(target, callback){
+  var metajson = path.join(target, 'package.json');
+  if(programe.meta){
+    metajson = programe.meta;
   }
-  var header = name+'\n';
-  var toc = generateTOC(licenses).join('\n');
-  var counter=1;
-  fs.appendFile(targetFile, [header, toc].join('\n') + '\n\n', function(err){
+  if(!fs.existsSync(metajson)){
+    throw new Error('can not find package.json file at ' + metajson);
+  }
+  var parsed = parser(metajson);
+  var name = parsed.name;
+  var libs = parsed.libs;
+  generator(libs, function(err, results){
     if(err){
       return callback(err);
-    }
-    async.eachSeries(licenses, function(license, cb){
-      var contentHeader = '--------------- SECTION ' + (counter++) + ' : ' + license.name + ' ----------------';
-      var content = [contentHeader, license.name + ' : ' + license.type, license.contents].join('\n') + '\n\n';
-      fs.appendFile(targetFile, content, function(err){
-        if(err){
-          return cb(err);
-        } else {
-          console.log('Added ' + license.name + ' license');
-          cb();
-        }
-      });
-    }, function(err){
-      if(err){
-        callback(err);
-      } else {
-        console.log('licenses.txt file is written to ' + targetFile);
-        callback();
-      }
-    });
-  });
-}
-
-function generateLicense(target, callback){
-  console.log(target);
-  var packagejson = path.join(target, 'package.json');
-  if(!fs.existsSync(packagejson)){
-    throw new Error('can not find package.json file at ' + packagejson);
-  }
-  var content = fs.readFileSync(packagejson, 'utf8');
-  var packages = JSON.parse(content);
-  var name = packages.name;
-  var deps = getDeps(packages);
-  async.map(deps, function(dep, cb){
-    var licensepath = path.join('.', 'licenses', dep+'.txt');
-    fs.exists(licensepath, function(exists){
-      if(exists){
-        fs.readFile(licensepath, {encoding: 'utf8'}, function(err, content){
-          if(err){
-            return cb(err);
-          }
-          var contentArray = content.split('\n');
-          var result = {
-            name: contentArray.shift(0),
-            type: contentArray.shift(0),
-            link: contentArray.shift(0),
-            contents: contentArray.join('\n')
-          };
-          return cb(null, result);
-        });
-      } else {
-        return cb('license file ' + licensepath + ' does not exist');
-      }
-    });
-  }, function(err, results){
-    if(err){
-      callback(err);
     } else {
-      writeLicenseFile(target, name, results, callback);
+      var targetFile = path.join(target, 'licenses.txt');
+      return writer.write(targetFile, name, results, callback);
     }
   });
 }
 
-generateLicense(targetModule, function(err){
+function generateLicenseForAll(target, callback){
+  if(!fs.existsSync(programe.all)){
+    throw new Error('can not find file specified at ' + programe.all);
+  }
+  var content = fs.readFileSync(programe.all, 'utf8');
+  var allmeta = JSON.parse(content);
+  async.map(allmeta, function(meta, cb){
+    var parsed = parser(meta);
+    var name = parsed.name;
+    var libs = parsed.libs;
+    generator(libs, function(err, results){
+      if(err){
+        return cb(err);
+      } else {
+        return cb(null, {
+          name: name,
+          licenses: results
+        });
+      }
+    });
+  }, function(err, allmodules){
+    if(err){
+      return callback(err);
+    } else {
+      var targetFile = path.join(target, 'licenses.txt');
+      return writer.writeAll(targetFile, allmodules, callback);
+    }
+  });
+}
+
+var invoke = generateLicense;
+if(programe.all){
+  invoke = generateLicenseForAll;
+}
+
+invoke(targetModule, function(err){
   if(err){
     console.error(err);
     process.exit(1);

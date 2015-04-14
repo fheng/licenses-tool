@@ -1,0 +1,46 @@
+FeedHenry By Red Hat Mobile Application Platform
+
+===========================================================================
+
+The following copyright statements and licenses apply to various open
+source software packages (or portions thereof) that are distributed with
+this Product. 
+
+The Product may also include other components, which may 
+contain additional open source software packages. One or more such 
+licenses.txt files may therefore accompany this Product. 
+
+The Product that includes this file does not necessarily use all the
+open source software packages referred to below and may also only use
+portions of a given package.
+
+
+===========================================================================
+TABLE OF CONTENTS
+===========================================================================
+
+The following is a listing of the open source components detailed in this
+document. This list is provided for your convenience; please read further if
+you wish to review the copyright notice(s) and the full text of the license
+associated with each component.
+
+{{#each modules}}
+PART {{inc @index}}. {{name}}
+
+{{#each licenses}}
+  SECTION {{inc @index}} : {{name}}
+{{/each}}
+
+{{/each}}
+
+{{#each modules}}
+================================ PART {{inc @index}}. {{name}} ================================
+
+{{#each licenses}}
+-------------------------------- SECTION {{inc @index}} : {{name}} ---------------------------
+{{name}} : {{type}}
+
+{{{contents}}}
+
+{{/each}}
+{{/each}}

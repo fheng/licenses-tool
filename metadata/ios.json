@@ -1,0 +1,4 @@
+{
+  "name":"fh-ios-sdk",
+  "libs":["ASIHttpRequest", "Reachability"]
+}

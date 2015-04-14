@@ -1,0 +1,4 @@
+{
+  "name":"fh-android-sdk",
+  "libs":["asynchttp", "jsonjava"]
+}

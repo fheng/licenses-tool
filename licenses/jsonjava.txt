@@ -1,0 +1,5 @@
+Json Java
+Custom
+
+The software shall be used for good, not evil. If your conscience cannot 
+live with that, then choose a different package.

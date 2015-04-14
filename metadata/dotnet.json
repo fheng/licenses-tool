@@ -1,0 +1,4 @@
+{
+  "name":"fh-dotnet-sdk",
+  "libs":["jsonnet", "Microsoft.Bcl", "Microsoft.Net.Http", "Unity"]
+}

@@ -1,0 +1,12 @@
+{{name}}
+
+{{#each licenses}}
+Section {{inc @index}} : {{name}}
+{{/each}}
+
+{{#each licenses}}
+---------------  Section {{inc @index}} : {{name}} ---------------
+{{name}} : {{type}}
+
+{{{contents}}}
+{{/each}}

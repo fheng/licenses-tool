@@ -23,6 +23,8 @@ node generate.js -m meta.json <target dir to write the generated licenses.txt fi
 
 It will generate a licenses.txt file in the target dir.
 
+Important: this target directory must exist prior to running generate.js.
+
 package.json is supported too.
 
 # Generate an overarching licenses.txt file for multiple components
@@ -31,6 +33,12 @@ Create a JSON file to describe paths of the components' meta data file in an arr
 
 ```bash
 node generate.js -a all.json <target dir to write the generated licenses.txt file>
+```
+
+Or to (for example) generate licenses for the on-prem MBaaS:
+
+```
+node generate.js -a metadata/mbaas.json rhmap-mbaas-4.0-beta
 ```
 
 # About the license txt file

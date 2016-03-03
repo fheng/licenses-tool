@@ -1,0 +1,17 @@
+[
+  "/Users/jasonmadigan/Work/fh-messaging/fh-messaging/package.json",
+  "/Users/jasonmadigan/Work/fh-messaging/fh-metrics/package.json",
+  "/Users/jasonmadigan/Work/fh-stats/fh-statsd/package.json",
+  "/Users/jasonmadigan/Work/fh-mbaas/package.json",
+  "/Users/jasonmadigan/Work/fh-config/package.json",
+  "/Users/jasonmadigan/Work/fh-cluster/package.json",
+  "/Users/jasonmadigan/Work/fh-db/package.json",
+  "/Users/jasonmadigan/Work/fh-logger/package.json",
+  "/Users/jasonmadigan/Work/fh-amqp-js/package.json",
+  "/Users/jasonmadigan/Work/fh-mbaas-middleware/package.json",
+  "/Users/jasonmadigan/Work/fh-forms/package.json",
+  "/Users/jasonmadigan/Work/fh-gridfs/package.json",
+  "/Users/jasonmadigan/Work/fh-mbaas-client/package.json",
+  "/Users/jasonmadigan/Work/fh-metrics-client/package.json",
+  "/Users/jasonmadigan/Work/fh-messaging-client/package.json"
+]

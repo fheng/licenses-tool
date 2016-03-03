@@ -34,7 +34,7 @@ function generateLicense(target, callback){
   var parsed = parser(metajson);
   var name = parsed.name;
   var libs = parsed.libs;
-  generator(libs, function(err, results){
+  generator(name, libs, function(err, results){
     if(err){
       return callback(err);
     } else {
@@ -54,7 +54,7 @@ function generateLicenseForAll(target, callback){
     var parsed = parser(meta);
     var name = parsed.name;
     var libs = parsed.libs;
-    generator(libs, function(err, results){
+    generator(name, libs, function(err, results){
       if(err){
         return cb(err);
       } else {

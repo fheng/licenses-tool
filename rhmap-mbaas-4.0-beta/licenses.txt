@@ -1,6 +1,6 @@
 Red Hat Mobile Application Platform
 Version 4.0.0-Beta
-Last Updated: 2016-03-03
+Last Updated: 2016-04-06
 
 ===========================================================================
 
@@ -29,71 +29,72 @@ associated with each component.
 PART 1. fh-messaging
 
   SECTION 1 : agenda
-  SECTION 2 : Async.js
+  SECTION 2 : async
   SECTION 3 : body-parser
   SECTION 4 : express
   SECTION 5 : express-bunyan-logger
   SECTION 6 : geoip
   SECTION 7 : lines
-  SECTION 8 : Moment.js
-  SECTION 9 : node-mongodb
+  SECTION 8 : moment
+  SECTION 9 : mongodb
   SECTION 10 : netmask
   SECTION 11 : node-fs
   SECTION 12 : optimist
-  SECTION 13 : requestjs
+  SECTION 13 : request
   SECTION 14 : semver
-  SECTION 15 : underscorejs
+  SECTION 15 : underscore
 
 PART 2. fh-metrics
 
-  SECTION 1 : Async.js
+  SECTION 1 : async
   SECTION 2 : body-parser
   SECTION 3 : express
   SECTION 4 : express-bunyan-logger
   SECTION 5 : lines
-  SECTION 6 : Moment.js
-  SECTION 7 : node-mongodb
+  SECTION 6 : moment
+  SECTION 7 : mongodb
   SECTION 8 : node-fs
   SECTION 9 : optimist
-  SECTION 10 : requestjs
-  SECTION 11 : underscorejs
+  SECTION 10 : request
+  SECTION 11 : underscore
 
 PART 3. fh-statsd
 
-  SECTION 1 : Async.js
+  SECTION 1 : async
   SECTION 2 : body-parser
-  SECTION 3 : express
-  SECTION 4 : express-bunyan-logger
-  SECTION 5 : dateformat
+  SECTION 3 : dateformat
+  SECTION 4 : express
+  SECTION 5 : express-bunyan-logger
   SECTION 6 : optimist
 
 PART 4. fh-mbaas
 
-  SECTION 1 : Async.js
+  SECTION 1 : async
   SECTION 2 : body-parser
   SECTION 3 : bunyan
   SECTION 4 : cors
   SECTION 5 : cuid
   SECTION 6 : express
   SECTION 7 : express-bunyan-logger
-  SECTION 8 : node-mongodb
-  SECTION 9 : mongoose
-  SECTION 10 : mongoose-filter-denormalize
-  SECTION 11 : mongoose-timestamp
-  SECTION 12 : mongoose-unique-validator
-  SECTION 13 : mongoose-validator
-  SECTION 14 : multer
-  SECTION 15 : optimist
-  SECTION 16 : rc
-  SECTION 17 : requestjs
-  SECTION 18 : underscorejs
+  SECTION 8 : mongodb
+  SECTION 9 : mongodb-uri
+  SECTION 10 : mongoose
+  SECTION 11 : mongoose-filter-denormalize
+  SECTION 12 : mongoose-timestamp
+  SECTION 13 : mongoose-unique-validator
+  SECTION 14 : mongoose-validator
+  SECTION 15 : multer
+  SECTION 16 : optimist
+  SECTION 17 : rc
+  SECTION 18 : request
+  SECTION 19 : underscore
 
 PART 5. fh-config
 
   SECTION 1 : bunyan
   SECTION 2 : dateformat
-  SECTION 3 : winstonjs
-  SECTION 4 : Async.js
+  SECTION 3 : winston
+  SECTION 4 : async
 
 PART 6. fh-cluster
 
@@ -102,8 +103,8 @@ PART 6. fh-cluster
 
 PART 7. fh-db
 
-  SECTION 1 : node-mongodb
-  SECTION 2 : Async.js
+  SECTION 1 : mongodb
+  SECTION 2 : async
   SECTION 3 : lodash
   SECTION 4 : adm-zip
   SECTION 5 : csvtojson
@@ -116,19 +117,19 @@ PART 8. fh-logger
 PART 9. fh-amqp-js
 
   SECTION 1 : node-amqp
-  SECTION 2 : Async.js
+  SECTION 2 : async
   SECTION 3 : lodash
   SECTION 4 : node-uuid
   SECTION 5 : rc
 
 PART 10. fh-mbaas-middleware
 
-  SECTION 1 : Async.js
+  SECTION 1 : async
   SECTION 2 : bunyan
   SECTION 3 : cuid
   SECTION 4 : express
-  SECTION 5 : Moment.js
-  SECTION 6 : node-mongodb
+  SECTION 5 : moment
+  SECTION 6 : mongodb
   SECTION 7 : mongoose
   SECTION 8 : mongoose-filter-denormalize
   SECTION 9 : mongoose-timestamp
@@ -138,52 +139,52 @@ PART 10. fh-mbaas-middleware
   SECTION 13 : nodemailer-sendgrid-transport
   SECTION 14 : optimist
   SECTION 15 : rc
-  SECTION 16 : Redis
-  SECTION 17 : requestjs
-  SECTION 18 : underscorejs
+  SECTION 16 : redis
+  SECTION 17 : request
+  SECTION 18 : underscore
 
 PART 11. fh-forms
 
   SECTION 1 : archiver
-  SECTION 2 : Async.js
+  SECTION 2 : async
   SECTION 3 : handlebars
   SECTION 4 : lodash
-  SECTION 5 : mime.js
-  SECTION 6 : Moment.js
-  SECTION 7 : node-mongodb
+  SECTION 5 : mime
+  SECTION 6 : moment
+  SECTION 7 : mongodb
   SECTION 8 : mongoose
   SECTION 9 : phantom
-  SECTION 10 : requestjs
-  SECTION 11 : underscorejs
+  SECTION 10 : request
+  SECTION 11 : underscore
 
 PART 12. fh-gridfs
 
-  SECTION 1 : node-mongodb
+  SECTION 1 : mongodb
   SECTION 2 : archiver
   SECTION 3 : gridfs-stream
   SECTION 4 : gm
-  SECTION 5 : Async.js
-  SECTION 6 : mime.js
+  SECTION 5 : async
+  SECTION 6 : mime
   SECTION 7 : lodash
   SECTION 8 : rimraf
   SECTION 9 : base64-stream
 
 PART 13. fh-mbaas-client
 
-  SECTION 1 : requestjs
-  SECTION 2 : underscorejs
+  SECTION 1 : request
+  SECTION 2 : underscore
   SECTION 3 : bunyan
 
 PART 14. fh-metrics-client
 
-  SECTION 1 : requestjs
-  SECTION 2 : underscorejs
-  SECTION 3 : Moment.js
+  SECTION 1 : request
+  SECTION 2 : underscore
+  SECTION 3 : moment
 
 PART 15. fh-messaging-client
 
-  SECTION 1 : requestjs
-  SECTION 2 : underscorejs
+  SECTION 1 : request
+  SECTION 2 : underscore
 
 
 ================================ PART 1. fh-messaging ================================
@@ -198,10 +199,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 2 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 2 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -225,7 +225,6 @@ THE SOFTWARE.
 -------------------------------- SECTION 3 : body-parser ---------------------------
 body-parser : MIT
 
-(The MIT License)
 
 Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
 Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
@@ -249,10 +248,10 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+
 -------------------------------- SECTION 4 : express ---------------------------
 express : MIT
 
-(The MIT License)
 
 Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>
 Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>
@@ -276,6 +275,7 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
 -------------------------------- SECTION 5 : express-bunyan-logger ---------------------------
 express-bunyan-logger : MIT
@@ -814,10 +814,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 8 : Moment.js ---------------------------
-Moment.js : MIT
+-------------------------------- SECTION 8 : moment ---------------------------
+moment : MIT
 
-Copyright (c) 2011-2014 Tim Wood, Iskren Chernev, Moment.js contributors
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -840,10 +839,10 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 9 : node-mongodb ---------------------------
-node-mongodb : Apache 2.0
 
-Apache License
+-------------------------------- SECTION 9 : mongodb ---------------------------
+mongodb : Apache 2.0
+
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -1023,7 +1022,7 @@ Apache License
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -1031,7 +1030,7 @@ Apache License
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -1044,6 +1043,7 @@ Apache License
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
 
 -------------------------------- SECTION 10 : netmask ---------------------------
 netmask : MIT
@@ -1100,10 +1100,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
--------------------------------- SECTION 13 : requestjs ---------------------------
-requestjs : Apache 2.0
 
-Apache License
+-------------------------------- SECTION 13 : request ---------------------------
+request : Apache 2.0
+
 
 Version 2.0, January 2004
 
@@ -1177,10 +1177,10 @@ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
 IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
--------------------------------- SECTION 15 : underscorejs ---------------------------
-underscorejs : MIT
 
-Copyright (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative
+-------------------------------- SECTION 15 : underscore ---------------------------
+underscore : MIT
+
 Reporters & Editors
 
 Permission is hereby granted, free of charge, to any person
@@ -1204,12 +1204,12 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+
 ================================ PART 2. fh-metrics ================================
 
--------------------------------- SECTION 1 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 1 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1233,7 +1233,6 @@ THE SOFTWARE.
 -------------------------------- SECTION 2 : body-parser ---------------------------
 body-parser : MIT
 
-(The MIT License)
 
 Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
 Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
@@ -1257,10 +1256,10 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+
 -------------------------------- SECTION 3 : express ---------------------------
 express : MIT
 
-(The MIT License)
 
 Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>
 Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>
@@ -1284,6 +1283,7 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
 -------------------------------- SECTION 4 : express-bunyan-logger ---------------------------
 express-bunyan-logger : MIT
@@ -1317,10 +1317,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 6 : Moment.js ---------------------------
-Moment.js : MIT
+-------------------------------- SECTION 6 : moment ---------------------------
+moment : MIT
 
-Copyright (c) 2011-2014 Tim Wood, Iskren Chernev, Moment.js contributors
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -1343,10 +1342,10 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 7 : node-mongodb ---------------------------
-node-mongodb : Apache 2.0
 
-Apache License
+-------------------------------- SECTION 7 : mongodb ---------------------------
+mongodb : Apache 2.0
+
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -1526,7 +1525,7 @@ Apache License
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -1534,7 +1533,7 @@ Apache License
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -1547,6 +1546,7 @@ Apache License
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
 
 -------------------------------- SECTION 8 : node-fs ---------------------------
 node-fs : MIT
@@ -1593,10 +1593,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
--------------------------------- SECTION 10 : requestjs ---------------------------
-requestjs : Apache 2.0
 
-Apache License
+-------------------------------- SECTION 10 : request ---------------------------
+request : Apache 2.0
+
 
 Version 2.0, January 2004
 
@@ -1652,10 +1652,9 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
--------------------------------- SECTION 11 : underscorejs ---------------------------
-underscorejs : MIT
+-------------------------------- SECTION 11 : underscore ---------------------------
+underscore : MIT
 
-Copyright (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative
 Reporters & Editors
 
 Permission is hereby granted, free of charge, to any person
@@ -1679,12 +1678,12 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+
 ================================ PART 3. fh-statsd ================================
 
--------------------------------- SECTION 1 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 1 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1708,7 +1707,6 @@ THE SOFTWARE.
 -------------------------------- SECTION 2 : body-parser ---------------------------
 body-parser : MIT
 
-(The MIT License)
 
 Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
 Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
@@ -1732,10 +1730,34 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 3 : express ---------------------------
+
+-------------------------------- SECTION 3 : dateformat ---------------------------
+dateformat : MIT
+
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+-------------------------------- SECTION 4 : express ---------------------------
 express : MIT
 
-(The MIT License)
 
 Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>
 Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>
@@ -1760,7 +1782,8 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 4 : express-bunyan-logger ---------------------------
+
+-------------------------------- SECTION 5 : express-bunyan-logger ---------------------------
 express-bunyan-logger : MIT
 
 
@@ -1781,29 +1804,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
--------------------------------- SECTION 5 : dateformat ---------------------------
-dateformat : MIT
-
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 -------------------------------- SECTION 6 : optimist ---------------------------
 optimist : MIT
@@ -1829,12 +1829,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+
 ================================ PART 4. fh-mbaas ================================
 
--------------------------------- SECTION 1 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 1 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1858,7 +1858,6 @@ THE SOFTWARE.
 -------------------------------- SECTION 2 : body-parser ---------------------------
 body-parser : MIT
 
-(The MIT License)
 
 Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
 Copyright (c) 2014-2015 Douglas Christopher Wilson <doug@somethingdoug.com>
@@ -1881,6 +1880,7 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
 -------------------------------- SECTION 3 : bunyan ---------------------------
 bunyan : MIT
@@ -1911,7 +1911,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -------------------------------- SECTION 4 : cors ---------------------------
 cors : MIT
 
-The MIT License (MIT)
 
 Copyright (c) 2013 Troy Goode <troygoode@gmail.com>
 
@@ -1920,6 +1919,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
 -------------------------------- SECTION 5 : cuid ---------------------------
 cuid : MIT
@@ -1936,7 +1936,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 -------------------------------- SECTION 6 : express ---------------------------
 express : MIT
 
-(The MIT License)
 
 Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>
 Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>
@@ -1961,6 +1960,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+
 -------------------------------- SECTION 7 : express-bunyan-logger ---------------------------
 express-bunyan-logger : MIT
 
@@ -1983,10 +1983,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
--------------------------------- SECTION 8 : node-mongodb ---------------------------
-node-mongodb : Apache 2.0
+-------------------------------- SECTION 8 : mongodb ---------------------------
+mongodb : Apache 2.0
 
-Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -2166,7 +2165,7 @@ Apache License
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -2174,7 +2173,7 @@ Apache License
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -2188,7 +2187,34 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
--------------------------------- SECTION 9 : mongoose ---------------------------
+
+-------------------------------- SECTION 9 : mongodb-uri ---------------------------
+mongodb-uri : MIT
+
+
+Copyright (c) 2013 ObjectLabs Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+-------------------------------- SECTION 10 : mongoose ---------------------------
 mongoose : MIT
 
 Copyright (c) 2010 LearnBoost <dev@learnboost.com>
@@ -2199,7 +2225,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 10 : mongoose-filter-denormalize ---------------------------
+-------------------------------- SECTION 11 : mongoose-filter-denormalize ---------------------------
 mongoose-filter-denormalize : MIT
 
 
@@ -2223,7 +2249,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
--------------------------------- SECTION 11 : mongoose-timestamp ---------------------------
+-------------------------------- SECTION 12 : mongoose-timestamp ---------------------------
 mongoose-timestamp : MIT
 
 Original work: copyright (c) 2012 Brian Noguchi
@@ -2246,7 +2272,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
--------------------------------- SECTION 12 : mongoose-unique-validator ---------------------------
+-------------------------------- SECTION 13 : mongoose-unique-validator ---------------------------
 mongoose-unique-validator : MIT
 
 
@@ -2269,7 +2295,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
--------------------------------- SECTION 13 : mongoose-validator ---------------------------
+-------------------------------- SECTION 14 : mongoose-validator ---------------------------
 mongoose-validator : MIT
 
 
@@ -2295,10 +2321,9 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
--------------------------------- SECTION 14 : multer ---------------------------
+-------------------------------- SECTION 15 : multer ---------------------------
 multer : MIT
 
-Copyright (c) 2014 Hage Yaapa <[http://www.hacksparrow.com](http://www.hacksparrow.com)>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -2316,7 +2341,8 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 15 : optimist ---------------------------
+
+-------------------------------- SECTION 16 : optimist ---------------------------
 optimist : MIT
 
 
@@ -2340,7 +2366,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
--------------------------------- SECTION 16 : rc ---------------------------
+
+-------------------------------- SECTION 17 : rc ---------------------------
 rc : MIT
 
 The MIT License
@@ -2368,10 +2395,9 @@ ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 17 : requestjs ---------------------------
-requestjs : Apache 2.0
+-------------------------------- SECTION 18 : request ---------------------------
+request : Apache 2.0
 
-Apache License
 
 Version 2.0, January 2004
 
@@ -2427,10 +2453,9 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
--------------------------------- SECTION 18 : underscorejs ---------------------------
-underscorejs : MIT
+-------------------------------- SECTION 19 : underscore ---------------------------
+underscore : MIT
 
-Copyright (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative
 Reporters & Editors
 
 Permission is hereby granted, free of charge, to any person
@@ -2453,6 +2478,7 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
 
 ================================ PART 5. fh-config ================================
 
@@ -2505,10 +2531,10 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 3 : winstonjs ---------------------------
-winstonjs : MIT
 
-Copyright (c) 2010 Charlie Robbins
+-------------------------------- SECTION 3 : winston ---------------------------
+winston : MIT
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -2528,10 +2554,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
--------------------------------- SECTION 4 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 4 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -2580,9 +2605,18 @@ SOFTWARE.
 -------------------------------- SECTION 2 : lodash ---------------------------
 lodash : MIT
 
-Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-Based on Underscore.js, copyright 2009-2015 Jeremy Ashkenas,
+
+Based on Underscore.js, copyright Jeremy Ashkenas,
 DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>
+
+This software consists of voluntary contributions made by many
+individuals. For exact contribution history, see the revision history
+available at https://github.com/lodash/lodash
+
+The following license applies to all parts of this software except as
+documented below:
+
+====
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -2603,12 +2637,27 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+====
+
+Copyright and related rights for sample code are waived via CC0. Sample
+code is defined as all source code displayed within the prose of the
+documentation.
+
+CC0: http://creativecommons.org/publicdomain/zero/1.0/
+
+====
+
+Files located in the node_modules and vendor directories are externally
+maintained libraries used by this software which have their own
+licenses; we recommend you read them, as their terms may differ from the
+terms above.
+
+
 ================================ PART 7. fh-db ================================
 
--------------------------------- SECTION 1 : node-mongodb ---------------------------
-node-mongodb : Apache 2.0
+-------------------------------- SECTION 1 : mongodb ---------------------------
+mongodb : Apache 2.0
 
-Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -2788,7 +2837,7 @@ Apache License
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -2796,7 +2845,7 @@ Apache License
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -2810,10 +2859,10 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
--------------------------------- SECTION 2 : Async.js ---------------------------
-Async.js : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
+-------------------------------- SECTION 2 : async ---------------------------
+async : MIT
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -2837,9 +2886,18 @@ THE SOFTWARE.
 -------------------------------- SECTION 3 : lodash ---------------------------
 lodash : MIT
 
-Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-Based on Underscore.js, copyright 2009-2015 Jeremy Ashkenas,
+
+Based on Underscore.js, copyright Jeremy Ashkenas,
 DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>
+
+This software consists of voluntary contributions made by many
+individuals. For exact contribution history, see the revision history
+available at https://github.com/lodash/lodash
+
+The following license applies to all parts of this software except as
+documented below:
+
+====
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -2859,6 +2917,22 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+====
+
+Copyright and related rights for sample code are waived via CC0. Sample
+code is defined as all source code displayed within the prose of the
+documentation.
+
+CC0: http://creativecommons.org/publicdomain/zero/1.0/
+
+====
+
+Files located in the node_modules and vendor directories are externally
+maintained libraries used by this software which have their own
+licenses; we recommend you read them, as their terms may differ from the
+terms above.
+
 
 -------------------------------- SECTION 4 : adm-zip ---------------------------
 adm-zip : MIT
@@ -2888,13 +2962,13 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -------------------------------- SECTION 5 : csvtojson ---------------------------
 csvtojson : MIT
 
-Copyright (C) 2013 Keyang Xiang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
 -------------------------------- SECTION 6 : jcsv ---------------------------
 jcsv : MIT
@@ -2976,10 +3050,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 IN THE SOFTWARE.
 
--------------------------------- SECTION 2 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 2 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -3003,9 +3076,18 @@ THE SOFTWARE.
 -------------------------------- SECTION 3 : lodash ---------------------------
 lodash : MIT
 
-Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-Based on Underscore.js, copyright 2009-2015 Jeremy Ashkenas,
+
+Based on Underscore.js, copyright Jeremy Ashkenas,
 DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>
+
+This software consists of voluntary contributions made by many
+individuals. For exact contribution history, see the revision history
+available at https://github.com/lodash/lodash
+
+The following license applies to all parts of this software except as
+documented below:
+
+====
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -3025,6 +3107,22 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+====
+
+Copyright and related rights for sample code are waived via CC0. Sample
+code is defined as all source code displayed within the prose of the
+documentation.
+
+CC0: http://creativecommons.org/publicdomain/zero/1.0/
+
+====
+
+Files located in the node_modules and vendor directories are externally
+maintained libraries used by this software which have their own
+licenses; we recommend you read them, as their terms may differ from the
+terms above.
+
 
 -------------------------------- SECTION 4 : node-uuid ---------------------------
 node-uuid : MIT
@@ -3080,10 +3178,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================ PART 10. fh-mbaas-middleware ================================
 
--------------------------------- SECTION 1 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 1 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -3145,7 +3242,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 -------------------------------- SECTION 4 : express ---------------------------
 express : MIT
 
-(The MIT License)
 
 Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>
 Copyright (c) 2013-2014 Roman Shtylman <shtylman+expressjs@gmail.com>
@@ -3170,10 +3266,10 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 5 : Moment.js ---------------------------
-Moment.js : MIT
 
-Copyright (c) 2011-2014 Tim Wood, Iskren Chernev, Moment.js contributors
+-------------------------------- SECTION 5 : moment ---------------------------
+moment : MIT
+
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -3196,10 +3292,10 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 6 : node-mongodb ---------------------------
-node-mongodb : Apache 2.0
 
-Apache License
+-------------------------------- SECTION 6 : mongodb ---------------------------
+mongodb : Apache 2.0
+
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -3379,7 +3475,7 @@ Apache License
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -3387,7 +3483,7 @@ Apache License
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -3400,6 +3496,7 @@ Apache License
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
 
 -------------------------------- SECTION 7 : mongoose ---------------------------
 mongoose : MIT
@@ -3575,6 +3672,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+
 -------------------------------- SECTION 15 : rc ---------------------------
 rc : MIT
 
@@ -3603,10 +3701,11 @@ ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 16 : Redis ---------------------------
-Redis : MIT
+-------------------------------- SECTION 16 : redis ---------------------------
+redis : MIT
 
-Copyright (c) 2010 Matthew Ranney, http://ranney.com/
+
+Copyright (c) 2016 by NodeRedis
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -3629,10 +3728,9 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 17 : requestjs ---------------------------
-requestjs : Apache 2.0
+-------------------------------- SECTION 17 : request ---------------------------
+request : Apache 2.0
 
-Apache License
 
 Version 2.0, January 2004
 
@@ -3688,10 +3786,9 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
--------------------------------- SECTION 18 : underscorejs ---------------------------
-underscorejs : MIT
+-------------------------------- SECTION 18 : underscore ---------------------------
+underscore : MIT
 
-Copyright (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative
 Reporters & Editors
 
 Permission is hereby granted, free of charge, to any person
@@ -3715,12 +3812,12 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+
 ================================ PART 11. fh-forms ================================
 
 -------------------------------- SECTION 1 : archiver ---------------------------
 archiver : MIT
 
-Copyright (c) 2012-2014 Chris Talkington, contributors.
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -3743,10 +3840,9 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 2 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 2 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -3793,9 +3889,18 @@ THE SOFTWARE.
 -------------------------------- SECTION 4 : lodash ---------------------------
 lodash : MIT
 
-Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-Based on Underscore.js, copyright 2009-2015 Jeremy Ashkenas,
+
+Based on Underscore.js, copyright Jeremy Ashkenas,
 DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>
+
+This software consists of voluntary contributions made by many
+individuals. For exact contribution history, see the revision history
+available at https://github.com/lodash/lodash
+
+The following license applies to all parts of this software except as
+documented below:
+
+====
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -3816,10 +3921,25 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 5 : mime.js ---------------------------
-mime.js : MIT
+====
 
-Copyright (c) 2010 Benjamin Thomas, Robert Kieffer
+Copyright and related rights for sample code are waived via CC0. Sample
+code is defined as all source code displayed within the prose of the
+documentation.
+
+CC0: http://creativecommons.org/publicdomain/zero/1.0/
+
+====
+
+Files located in the node_modules and vendor directories are externally
+maintained libraries used by this software which have their own
+licenses; we recommend you read them, as their terms may differ from the
+terms above.
+
+
+-------------------------------- SECTION 5 : mime ---------------------------
+mime : MIT
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -3839,10 +3959,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
--------------------------------- SECTION 6 : Moment.js ---------------------------
-Moment.js : MIT
 
-Copyright (c) 2011-2014 Tim Wood, Iskren Chernev, Moment.js contributors
+-------------------------------- SECTION 6 : moment ---------------------------
+moment : MIT
+
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -3865,10 +3985,10 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 7 : node-mongodb ---------------------------
-node-mongodb : Apache 2.0
 
-Apache License
+-------------------------------- SECTION 7 : mongodb ---------------------------
+mongodb : Apache 2.0
+
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -4048,7 +4168,7 @@ Apache License
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -4056,7 +4176,7 @@ Apache License
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -4069,6 +4189,7 @@ Apache License
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
 
 -------------------------------- SECTION 8 : mongoose ---------------------------
 mongoose : MIT
@@ -4091,10 +4212,9 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 
 
--------------------------------- SECTION 10 : requestjs ---------------------------
-requestjs : Apache 2.0
+-------------------------------- SECTION 10 : request ---------------------------
+request : Apache 2.0
 
-Apache License
 
 Version 2.0, January 2004
 
@@ -4150,10 +4270,9 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
--------------------------------- SECTION 11 : underscorejs ---------------------------
-underscorejs : MIT
+-------------------------------- SECTION 11 : underscore ---------------------------
+underscore : MIT
 
-Copyright (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative
 Reporters & Editors
 
 Permission is hereby granted, free of charge, to any person
@@ -4177,12 +4296,12 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+
 ================================ PART 12. fh-gridfs ================================
 
--------------------------------- SECTION 1 : node-mongodb ---------------------------
-node-mongodb : Apache 2.0
+-------------------------------- SECTION 1 : mongodb ---------------------------
+mongodb : Apache 2.0
 
-Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -4362,7 +4481,7 @@ Apache License
    APPENDIX: How to apply the Apache License to your work.
 
       To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "{}"
+      boilerplate notice, with the fields enclosed by brackets "[]"
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -4370,7 +4489,7 @@ Apache License
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright {yyyy} {name of copyright owner}
+   Copyright [yyyy] [name of copyright owner]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -4384,10 +4503,10 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
+
 -------------------------------- SECTION 2 : archiver ---------------------------
 archiver : MIT
 
-Copyright (c) 2012-2014 Chris Talkington, contributors.
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -4449,10 +4568,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 5 : Async.js ---------------------------
-Async.js : MIT
+-------------------------------- SECTION 5 : async ---------------------------
+async : MIT
 
-Copyright (c) 2010-2014 Caolan McMahon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -4473,10 +4591,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
--------------------------------- SECTION 6 : mime.js ---------------------------
-mime.js : MIT
+-------------------------------- SECTION 6 : mime ---------------------------
+mime : MIT
 
-Copyright (c) 2010 Benjamin Thomas, Robert Kieffer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -4495,13 +4612,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
 
 -------------------------------- SECTION 7 : lodash ---------------------------
 lodash : MIT
 
-Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
-Based on Underscore.js, copyright 2009-2015 Jeremy Ashkenas,
+
+Based on Underscore.js, copyright Jeremy Ashkenas,
 DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>
+
+This software consists of voluntary contributions made by many
+individuals. For exact contribution history, see the revision history
+available at https://github.com/lodash/lodash
+
+The following license applies to all parts of this software except as
+documented below:
+
+====
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -4522,32 +4649,40 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+====
+
+Copyright and related rights for sample code are waived via CC0. Sample
+code is defined as all source code displayed within the prose of the
+documentation.
+
+CC0: http://creativecommons.org/publicdomain/zero/1.0/
+
+====
+
+Files located in the node_modules and vendor directories are externally
+maintained libraries used by this software which have their own
+licenses; we recommend you read them, as their terms may differ from the
+terms above.
+
+
 -------------------------------- SECTION 8 : rimraf ---------------------------
-rimraf : MIT
+rimraf : ISC
 
-Copyright 2009, 2010, 2011 Isaac Z. Schlueter.
-All rights reserved.
 
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
+Copyright (c) Isaac Z. Schlueter and Contributors
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
 
 -------------------------------- SECTION 9 : base64-stream ---------------------------
 base64-stream : MIT
@@ -4556,10 +4691,9 @@ MIT
 
 ================================ PART 13. fh-mbaas-client ================================
 
--------------------------------- SECTION 1 : requestjs ---------------------------
-requestjs : Apache 2.0
+-------------------------------- SECTION 1 : request ---------------------------
+request : Apache 2.0
 
-Apache License
 
 Version 2.0, January 2004
 
@@ -4615,10 +4749,9 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
--------------------------------- SECTION 2 : underscorejs ---------------------------
-underscorejs : MIT
+-------------------------------- SECTION 2 : underscore ---------------------------
+underscore : MIT
 
-Copyright (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative
 Reporters & Editors
 
 Permission is hereby granted, free of charge, to any person
@@ -4641,6 +4774,7 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
 
 -------------------------------- SECTION 3 : bunyan ---------------------------
 bunyan : MIT
@@ -4670,10 +4804,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ================================ PART 14. fh-metrics-client ================================
 
--------------------------------- SECTION 1 : requestjs ---------------------------
-requestjs : Apache 2.0
+-------------------------------- SECTION 1 : request ---------------------------
+request : Apache 2.0
 
-Apache License
 
 Version 2.0, January 2004
 
@@ -4729,10 +4862,9 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
--------------------------------- SECTION 2 : underscorejs ---------------------------
-underscorejs : MIT
+-------------------------------- SECTION 2 : underscore ---------------------------
+underscore : MIT
 
-Copyright (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative
 Reporters & Editors
 
 Permission is hereby granted, free of charge, to any person
@@ -4756,10 +4888,10 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
--------------------------------- SECTION 3 : Moment.js ---------------------------
-Moment.js : MIT
 
-Copyright (c) 2011-2014 Tim Wood, Iskren Chernev, Moment.js contributors
+-------------------------------- SECTION 3 : moment ---------------------------
+moment : MIT
+
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -4781,13 +4913,13 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
 
 ================================ PART 15. fh-messaging-client ================================
 
--------------------------------- SECTION 1 : requestjs ---------------------------
-requestjs : Apache 2.0
+-------------------------------- SECTION 1 : request ---------------------------
+request : Apache 2.0
 
-Apache License
 
 Version 2.0, January 2004
 
@@ -4843,10 +4975,9 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
--------------------------------- SECTION 2 : underscorejs ---------------------------
-underscorejs : MIT
+-------------------------------- SECTION 2 : underscore ---------------------------
+underscore : MIT
 
-Copyright (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative
 Reporters & Editors
 
 Permission is hereby granted, free of charge, to any person
@@ -4869,4 +5000,5 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
 

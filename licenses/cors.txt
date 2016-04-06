@@ -1,6 +1,5 @@
 cors
 MIT
-https://raw.githubusercontent.com/troygoode/node-cors/master/LICENSE
 The MIT License (MIT)
 
 Copyright (c) 2013 Troy Goode <troygoode@gmail.com>

@@ -1,6 +1,5 @@
-mime.js
+mime
 MIT
-https://raw.githubusercontent.com/broofa/node-mime/master/LICENSE
 Copyright (c) 2010 Benjamin Thomas, Robert Kieffer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

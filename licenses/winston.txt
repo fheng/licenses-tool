@@ -1,6 +1,5 @@
-winstonjs
+winston
 MIT
-https://raw.githubusercontent.com/winstonjs/winston/master/LICENSE
 Copyright (c) 2010 Charlie Robbins
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

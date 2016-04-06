@@ -1,6 +1,5 @@
 body-parser
 MIT
-https://raw.githubusercontent.com/expressjs/body-parser/master/LICENSE
 (The MIT License)
 
 Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>

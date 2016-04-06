@@ -1,6 +1,5 @@
 express
 MIT
-https://raw.githubusercontent.com/strongloop/express/master/LICENSE
 (The MIT License)
 
 Copyright (c) 2009-2014 TJ Holowaychuk <tj@vision-media.ca>

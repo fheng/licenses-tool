@@ -8,6 +8,7 @@ var fs = require('fs');
 var parser = require('./lib/parser');
 var generator = require('./lib/generator');
 var writer = require('./lib/writer');
+var mkdirp = require('mkdirp');
 
 programe
   .version('0.0.1')
@@ -16,26 +17,26 @@ programe
   .option('-a, --all [value]', 'Specify the path to a json file contains the paths of an array of meta data files for generating an overarching license file')
   .parse(process.argv);
 
-if(!programe.args.length){
+if (!programe.args.length) {
   programe.outputHelp();
   process.exit(1);
 }
 
 var targetModule = programe.args[0];
 
-function generateLicense(target, callback){
+function generateLicense(target, callback) {
   var metajson = path.join(target, 'package.json');
-  if(programe.meta){
+  if (programe.meta) {
     metajson = programe.meta;
   }
-  if(!fs.existsSync(metajson)){
+  if (!fs.existsSync(metajson)) {
     throw new Error('can not find package.json file at ' + metajson);
   }
   var parsed = parser(metajson);
   var name = parsed.name;
   var libs = parsed.libs;
-  generator(name, libs, function(err, results){
-    if(err){
+  generator(name, libs, function(err, results) {
+    if (err) {
       return callback(err);
     } else {
       var targetFile = path.join(target, 'licenses.txt');
@@ -44,18 +45,18 @@ function generateLicense(target, callback){
   });
 }
 
-function generateLicenseForAll(target, callback){
-  if(!fs.existsSync(programe.all)){
+function generateLicenseForAll(target, callback) {
+  if (!fs.existsSync(programe.all)) {
     throw new Error('can not find file specified at ' + programe.all);
   }
   var content = fs.readFileSync(programe.all, 'utf8');
   var allmeta = JSON.parse(content);
-  async.map(allmeta, function(meta, cb){
+  async.map(allmeta, function(meta, cb) {
     var parsed = parser(meta);
     var name = parsed.name;
     var libs = parsed.libs;
-    generator(name, libs, function(err, results){
-      if(err){
+    generator(name, libs, function(err, results) {
+      if (err) {
         return cb(err);
       } else {
         return cb(null, {
@@ -64,23 +65,32 @@ function generateLicenseForAll(target, callback){
         });
       }
     });
-  }, function(err, allmodules){
-    if(err){
+  }, function(err, allmodules) {
+    if (err) {
       return callback(err);
     } else {
-      var targetFile = path.join(target, 'licenses.txt');
-      return writer.writeAll(targetFile, allmodules, callback);
+
+      mkdirp(target, function(err) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+
+        var targetFile = path.join(target, 'licenses.txt');
+        return writer.writeAll(targetFile, allmodules, callback);
+      });
+
     }
   });
 }
 
 var invoke = generateLicense;
-if(programe.all){
+if (programe.all) {
   invoke = generateLicenseForAll;
 }
 
-invoke(targetModule, function(err){
-  if(err){
+invoke(targetModule, function(err) {
+  if (err) {
     console.error(err);
     process.exit(1);
   } else {

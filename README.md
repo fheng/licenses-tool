@@ -41,6 +41,12 @@ Or to (for example) generate licenses for the on-prem MBaaS:
 node generate.js -a metadata/mbaas.json rhmap-mbaas-4.0-beta
 ```
 
+Or MBaaS + existing SDKs:
+
+```
+node generate.js -a metadata/all.json rhmap/4.0
+```
+
 # About the license txt file
 
 Each license file should use the following format:

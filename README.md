@@ -35,16 +35,16 @@ Create a JSON file to describe paths of the components' meta data file in an arr
 node generate.js -a all.json <target dir to write the generated licenses.txt file>
 ```
 
-Or to (for example) generate licenses for the on-prem MBaaS:
+Or to (for example) generate licenses just for the on-prem MBaaS:
 
 ```
-node generate.js -a metadata/mbaas.json rhmap-mbaas-4.0-beta
+node generate.js --rhmapversion 4.0.0-beta -a metadata/mbaas.json generated/rhmap/4.0-beta
 ```
 
 Or MBaaS + existing SDKs:
 
 ```
-node generate.js -a metadata/all.json rhmap/4.0
+node generate.js --rhmapversion 4.0.0 -a metadata/all.json generated/rhmap/4.0
 ```
 
 # About the license txt file

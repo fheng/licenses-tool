@@ -1,6 +1,6 @@
 Red Hat Mobile Application Platform
 Version 4.0.0
-Last Updated: 2016-04-06
+Last Updated: 2016-04-07
 
 ===========================================================================
 

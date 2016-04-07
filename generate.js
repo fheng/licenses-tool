@@ -15,6 +15,7 @@ programe
   .usage('[options] <target dir to write the license file>')
   .option('-m, --meta [value]', 'Specify the path to a json file which describes the dependencies for generating the single licenses.txt file')
   .option('-a, --all [value]', 'Specify the path to a json file contains the paths of an array of meta data files for generating an overarching license file')
+  .option('-rhmapv, --rhmapversion [value]', 'Platform version')
   .parse(process.argv);
 
 if (!programe.args.length) {
@@ -23,8 +24,9 @@ if (!programe.args.length) {
 }
 
 var targetModule = programe.args[0];
+var version = programe.rhmapversion || "No-Version";
 
-function generateLicense(target, callback) {
+function generateLicense(target, version, callback) {
   var metajson = path.join(target, 'package.json');
   if (programe.meta) {
     metajson = programe.meta;
@@ -40,12 +42,12 @@ function generateLicense(target, callback) {
       return callback(err);
     } else {
       var targetFile = path.join(target, 'licenses.txt');
-      return writer.write(targetFile, name, results, callback);
+      return writer.write(targetFile, name, results, version, callback);
     }
   });
 }
 
-function generateLicenseForAll(target, callback) {
+function generateLicenseForAll(target, version, callback) {
   if (!fs.existsSync(programe.all)) {
     throw new Error('can not find file specified at ' + programe.all);
   }
@@ -77,7 +79,7 @@ function generateLicenseForAll(target, callback) {
         }
 
         var targetFile = path.join(target, 'licenses.txt');
-        return writer.writeAll(targetFile, allmodules, callback);
+        return writer.writeAll(targetFile, allmodules, version, callback);
       });
 
     }
@@ -89,7 +91,7 @@ if (programe.all) {
   invoke = generateLicenseForAll;
 }
 
-invoke(targetModule, function(err) {
+invoke(targetModule, version, function(err) {
   if (err) {
     console.error(err);
     process.exit(1);
